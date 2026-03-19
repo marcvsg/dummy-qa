@@ -1,0 +1,28 @@
+{
+  "name": "saucedemo-qa-playwright",
+  "version": "1.0.0",
+  "description": "QA Automation Portfolio — SauceDemo E2E Tests with Playwright + TypeScript",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright test --reporter=html && npx playwright show-report",
+    "test:functional": "npx playwright test tests/01-functional",
+    "test:auth": "npx playwright test tests/02-authentication",
+    "test:api": "npx playwright test tests/03-api",
+    "test:crud": "npx playwright test tests/04-crud",
+    "test:a11y": "npx playwright test tests/05-accessibility",
+    "test:visual": "npx playwright test tests/06-visual",
+    "test:perf": "npx playwright test tests/07-performance",
+    "test:e2e": "npx playwright test tests/08-e2e-journeys",
+    "test:edge": "npx playwright test tests/09-edge-cases"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@axe-core/playwright": "^4.9.0"
+  },
+  "keywords": ["qa", "playwright", "typescript", "automation", "testing", "saucedemo"],
+  "author": "",
+  "license": "MIT"
+}
